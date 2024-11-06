@@ -1,0 +1,14 @@
+
+#vbFondo{
+    -fx-background-color: #BED1E3 ;
+}
+
+#Boton{
+    -fx-background-color: #93AECA ;
+}
+
+#lbTitulo{
+    -fx-font-family: Georgia;
+    -fx-font-weight: 400;
+    -fx-font-style: normal;
+}
