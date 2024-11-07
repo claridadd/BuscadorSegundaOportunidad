@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="vbFondo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="624.0" minWidth="751.0" prefHeight="624.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.buscadorsegundaoportunidad.Controladores.HelloController">
+<VBox fx:id="vbFondo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="624.0" minWidth="751.0" prefHeight="624.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.buscadorsegundaoportunidad.Controladores.HelloController">
     <children>
         <Label id="lbTitulo" fx:id="lbTitulo" text="Tabla de res_partner_category">
             <font>
@@ -34,7 +34,7 @@
                         <Insets left="15.0" right="10.0" top="30.0" />
                     </HBox.margin>
                 </TextField>
-                <Button id="Boton" fx:id="btnBuscar" mnemonicParsing="false" onAction="#botonBuscar">
+                <Button id="Boton" fx:id="btnBuscar" mnemonicParsing="false" onAction="#buscar">
                     <graphic>
                         <ImageView fx:id="ivBuscar" fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -46,7 +46,7 @@
                         <Insets right="50.0" top="25.0" />
                     </HBox.margin>
                 </Button>
-                <Button id="Boton" fx:id="btnAñadir" mnemonicParsing="false" onAction="#botonAñadir">
+                <Button id="Boton" fx:id="btnAñadir" mnemonicParsing="false" onAction="#Añadir">
                     <graphic>
                         <ImageView fx:id="ivAñadir" fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -58,7 +58,7 @@
                         <Insets right="15.0" top="25.0" />
                     </HBox.margin>
                 </Button>
-                <Button id="Boton" fx:id="btnEditar" mnemonicParsing="false" onAction="#botonEditar">
+                <Button id="Boton" fx:id="btnEditar" mnemonicParsing="false" onAction="#Editar">
                     <graphic>
                         <ImageView fx:id="ivEditar" fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -70,7 +70,7 @@
                         <Insets right="15.0" top="25.0" />
                     </HBox.margin>
                 </Button>
-                <Button id="Boton" fx:id="btnBorrar" mnemonicParsing="false" onAction="#botonBorrar" HBox.hgrow="SOMETIMES">
+                <Button id="Boton" fx:id="btnBorrar" mnemonicParsing="false" onAction="#Borrar" HBox.hgrow="SOMETIMES">
                     <graphic>
                         <ImageView fx:id="ivBorrar" fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                             <image>

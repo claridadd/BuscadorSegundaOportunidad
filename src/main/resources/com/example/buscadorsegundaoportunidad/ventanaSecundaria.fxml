@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox fx:id="vbFondo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="427.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.buscadorsegundaoportunidad.Controladores.HelloController">
+<VBox fx:id="vbFondo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="427.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.buscadorsegundaoportunidad.Controladores.HelloControllerAñadir">
    <children>
       <Label fx:id="lbTitulo" alignment="CENTER" contentDisplay="CENTER" text="EDITAR">
          <VBox.margin>
@@ -28,7 +27,7 @@
                   <Insets left="39.0" right="-6.0" />
                </HBox.margin>
             </Label>
-            <TextField>
+            <TextField fx:id="tfId">
                <HBox.margin>
                   <Insets left="32.0" />
                </HBox.margin>
@@ -45,7 +44,7 @@
                   <Insets left="24.0" />
                </HBox.margin>
             </Label>
-            <TextField>
+            <TextField fx:id="tfColor">
                <HBox.margin>
                   <Insets left="30.0" />
                </HBox.margin>
@@ -62,7 +61,7 @@
                   <Insets left="2.0" />
                </HBox.margin>
             </Label>
-            <TextField>
+            <TextField fx:id="tfParentId">
                <HBox.margin>
                   <Insets left="30.0" />
                </HBox.margin>
@@ -79,7 +78,7 @@
                   <Insets left="-12.0" />
                </HBox.margin>
             </Label>
-            <TextField>
+            <TextField fx:id="tfParentPath">
                <HBox.margin>
                   <Insets left="30.0" />
                </HBox.margin>
@@ -96,7 +95,7 @@
                   <Insets left="-115.0" />
                </HBox.margin>
             </Label>
-            <CheckBox mnemonicParsing="false">
+            <CheckBox fx:id="cbActive" mnemonicParsing="false">
                <HBox.margin>
                   <Insets left="30.0" />
                </HBox.margin>
@@ -113,7 +112,7 @@
                   <Insets left="3.0" />
                </HBox.margin>
             </Label>
-            <DatePicker>
+            <DatePicker fx:id="dpCreationDate">
                <HBox.margin>
                   <Insets left="30.0" />
                </HBox.margin>
@@ -125,12 +124,12 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="96.0" prefWidth="427.0">
          <children>
-            <Button fx:id="btnCancelar" mnemonicParsing="false" text="Cancelar">
+            <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#btnAciones" text="Cancelar">
                <HBox.margin>
                   <Insets bottom="17.0" right="30.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="btnAceptar" alignment="CENTER" mnemonicParsing="false" text="Aceptar">
+            <Button fx:id="btnAceptar" alignment="CENTER" mnemonicParsing="false" onAction="#btnAciones" text="Aceptar">
                <HBox.margin>
                   <Insets bottom="17.0" left="30.0" />
                </HBox.margin>

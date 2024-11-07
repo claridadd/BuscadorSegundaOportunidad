@@ -77,8 +77,9 @@ public class HelloController
     }
 
     @FXML
-    public void botonBuscar(ActionEvent actionEvent) throws SQLException
+    public void buscar(ActionEvent actionEvent)
     {
+
         Task<Void> tarea = new Task<Void>()
         {
             @Override
@@ -110,56 +111,39 @@ public class HelloController
     }
 
     @FXML
-    public void botonBorrar(ActionEvent actionEvent)
+    public void Añadir(ActionEvent actionEvent)
+    {
+//        try {
+//            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(vent);
+//            Parent root = fxmlLoader.load();
+//            Scene scene = new Scene(root, 449, 400);
+//            Stage stage = new Stage();
+//            stage.setTitle("Añadir");
+//            stage.initModality(Modality.APPLICATION_MODAL);
+//            stage.setScene(scene);
+//            stage.setX(595);
+//            stage.setY(135);
+//
+//            //La ventana no se va a poder hacer ni mas grande ni mas pequeña de lo que es
+//            //stage.setMaxWidth(993);
+//            //stage.setMaxHeight(815);
+//            stage.setResizable(false);
+//            stage.show();
+//
+//        } catch (IOException e) {
+//            throw new RuntimeException(e);
+//        }
+    }
+
+
+
+    @FXML
+    public void Editar(ActionEvent actionEvent)
     {
     }
 
     @FXML
-    public void botonAñadir(ActionEvent actionEvent)
+    public void Borrar(ActionEvent actionEvent)
     {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(v);
-            Parent root = fxmlLoader.load();
-            Scene scene = new Scene(root, 449, 400);
-            Stage stage = new Stage();
-            stage.setTitle("Añadir");
-            stage.initModality(Modality.APPLICATION_MODAL);
-            stage.setScene(scene);
-            stage.setX(595);
-            stage.setY(135);
-
-            //La ventana no se va a poder hacer ni mas grande ni mas pequeña de lo que es
-            //stage.setMaxWidth(993);
-            //stage.setMaxHeight(815);
-            stage.setResizable(false);
-            stage.show();
-
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    @FXML
-    public void botonEditar(ActionEvent actionEvent)
-    {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ventanaAnadir.fxml"));
-            Parent root = fxmlLoader.load();
-            Scene scene = new Scene(root, 449, 400);
-            Stage stage = new Stage();
-            stage.setTitle("Editar");
-            stage.initModality(Modality.APPLICATION_MODAL);
-            stage.setScene(scene);
-            stage.setX(595);
-            stage.setY(135);
-
-            //La ventana no se va a poder mas grande ni mas pequeña de lo que es
-            //stage.setMaxWidth(993);
-            //stage.setMaxHeight(815);
-            stage.setResizable(false);
-            stage.show();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
     }
 }

@@ -1,10 +1,13 @@
 package com.example.buscadorsegundaoportunidad.DAO;
 
 import com.example.buscadorsegundaoportunidad.Modelos.Category;
+import javafx.scene.control.TextField;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.example.buscadorsegundaoportunidad.DAO.ConexionBD.connection;
 
 public class CategoryDAO
 {
@@ -43,5 +46,23 @@ public class CategoryDAO
         }
         return categorias;
 
+    }
+
+    public static void crearFila(TextField tfColor, TextField tfParentId, TextField tfParentPath, boolean active, Timestamp create_date)
+    {
+        try (Connection conexion = ConexionBD.getConnection();
+             PreparedStatement statement = connection.prepareStatement("INSERT INTO res_parent_category(color,parent_id,parent_path,active,create_date) VALUES(?,?,?,?,?)"))
+        {
+            statement.setInt(1, Integer.parseInt(tfColor.getText()));
+            statement.setInt(2, Integer.parseInt(tfParentId.getText()));
+            statement.setString(3, tfParentPath.getText());
+            statement.setBoolean(4, active);
+            statement.setTimestamp(5, create_date);
+            statement.execute();
+
+        } catch (SQLException e)
+        {
+            System.err.println("Error de SQL al crear: " + e.getMessage());
+        }
     }
 }
